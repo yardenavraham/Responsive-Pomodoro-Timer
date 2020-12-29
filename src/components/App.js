@@ -1,7 +1,6 @@
 import React from 'react';
 import BreakInterval from './BreakInterval';
 import SessionLength from './SessionLength';
-import Timer from './Timer';
 import FlipClock from './FlipClock';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../App.css';
@@ -99,7 +98,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <section id="cover">
+      <div className="pomodoro-container">
         <div className="container">
           <h1>Pomodoro Timer</h1>
           <div className="row justify-content-center align-items-center">
@@ -123,7 +122,7 @@ class App extends React.Component {
             resetTimer={this.onResetTimer}
             onPlayStopTimer={this.onPlayStopTimer} />
         </div>
-      </section>
+      </div>
     );
   }
 

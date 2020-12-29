@@ -229,7 +229,7 @@ class FlipClock extends React.Component {
           />
         </div>
         <div id="cool-buttons" className="interval-container">
-          <button type="button" className="btn btn-outline-dark actions-btn" onClick={this.playTimer}><FaPlay /></button>
+          <button type="button" className="btn btn-outline-dark actions-btn" disabled={this.props.isStart === true ? "disabled" : ""} onClick={this.playTimer}><FaPlay /></button>
           <button type="button" className="btn btn-outline-dark actions-btn" onClick={this.stopTimer}><FaStop /></button>
           <button type="button" className="btn btn-outline-dark actions-btn" font-size="3rem" onClick={this.resetTimer}><IoReload /></button>
         </div>
