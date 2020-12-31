@@ -290,7 +290,7 @@ header h1 {
 }
 
 
-/*Extra small devices (portrait phones, less than 576px)*/
+/* Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
     .flipCard span, .upperCard span, .lowerCard span {
         font-size: 4.5vw;
@@ -302,4 +302,4 @@ header h1 {
     .flipClock {
         margin-bottom: 0;
     }
- }
+ } */
