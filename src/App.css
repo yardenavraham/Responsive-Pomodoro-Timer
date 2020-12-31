@@ -139,3 +139,29 @@ h4{
     margin-bottom: 0;
   }
 }
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+  h1{
+    font-size: 7vw;
+  }
+  h6{
+    font-size: 4vw;
+  }
+
+  h4{
+    font-size: 5vw;
+    margin-bottom: 0;
+  }
+
+  .btn, .span{
+    font-size: 2vw;
+  }
+  p{
+    margin-top: 1vw;
+    margin-bottom: 0;
+  }
+  .row{
+    margin-bottom: 0vh;
+  }
+}

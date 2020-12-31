@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Droid+Sans+Mono");
-
 body {
     margin: 0;
 }
@@ -224,7 +223,6 @@ header h1 {
         font-size: 9vw;
         font-family: 'Architects Daughter', cursive, 'Fredericka the Great', cursive, 'Josefin Slab', serif, 'Open Sans Condensed', sans-serif;
     }
-
     .flipUnitContainer {
         height: 16vw;
         width: 16vw;
@@ -241,7 +239,7 @@ header h1 {
         height: 13vw;
         width: 13vw;
     }
-    .flipClock{
+    .flipClock {
         margin-bottom: 2vw;
     }
 }
@@ -256,7 +254,7 @@ header h1 {
         height: 12vw;
         width: 12vw;
     }
-    .flipClock{
+    .flipClock {
         margin-bottom: 1vw;
     }
 }
@@ -271,14 +269,14 @@ header h1 {
         height: 10vw;
         width: 10vw;
     }
-    .flipClock{
+    .flipClock {
         margin-bottom: 0;
     }
 }
 
- /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) { 
+/* Small devices (landscape phones, 576px and up) */
 
+@media (min-width: 576px) and (max-width: 767.98px) {
     .flipCard span, .upperCard span, .lowerCard span {
         font-size: 4.5vw;
     }
@@ -286,7 +284,22 @@ header h1 {
         height: 8vw;
         width: 8vw;
     }
-    .flipClock{
+    .flipClock {
         margin-bottom: 0;
     }
-  }
+}
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .flipCard span, .upperCard span, .lowerCard span {
+        font-size: 4.5vw;
+    }
+    .flipUnitContainer {
+        height: 8vw;
+        width: 8vw;
+    }
+    .flipClock {
+        margin-bottom: 0;
+    }
+ }
