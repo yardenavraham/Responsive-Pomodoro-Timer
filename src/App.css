@@ -1,5 +1,5 @@
 .pomodoro-container {
-  background: #222 url("https://www.wallpapertip.com/wmimgs/53-537197_computer-desk-background.jpg") center center no-repeat;
+  background: #222 url("https://www.wallpapertip.com/wmimgs/53-537197_computer-desk-background.jpg") no-repeat;
   background-size: cover;
   color: black;
   height: 100vh;
@@ -7,6 +7,7 @@
   text-align: center;
   display: flex;
   align-items: center;
+  background-position: 20% 80%;
 }
 
 p {
@@ -37,11 +38,11 @@ h4{
 .btn {
   font-size: 0.8rem;
   border-radius: 3.25rem;
-  border: 0.3vw solid #ffc107;
+  border: 0.3vw solid #f1a91f;
 }
 
 .btn-outline-dark {
-  border-color: #ffc107;
+  border-color: #f1a91f;
 }
 
 .row {
@@ -49,7 +50,6 @@ h4{
   margin-bottom: 2vh;
 }
 
-.up-down-btn {}
 
 .actions-btn {
   margin: 1vw;
@@ -62,6 +62,10 @@ h4{
 
 
 @media screen and (min-width: 576px) {
+  .pomodoro-container{
+    background-position: center;
+  }
+
   h1{
     font-size: 10vw;
   }
@@ -113,20 +117,25 @@ h4{
 
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
   h1{
-    font-size: 6vw;
+    font-size: 7vw;
   }
   h6{
-    font-size: 2vw;
-  }
-
-  h4{
     font-size: 4vw;
   }
 
-  .btn{
-    font-size: 2vw;
+  h4{
+    font-size: 5vw;
   }
 
- }
+  .btn, .span{
+    font-size: 2vw;
+  }
+  p{
+    margin-top: 1vw;
+    margin-bottom: 0;
+  }
+}
