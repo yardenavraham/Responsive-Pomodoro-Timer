@@ -13,6 +13,7 @@ function BreakInterval(props) {
     }
 
     function increaseCounter() {
+        props.clickSound();
         if (props.breakInterval === 60) {
             return;
         }

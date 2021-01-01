@@ -96,6 +96,11 @@ class App extends React.Component {
     })
   }
 
+  clickSound(){
+    var sound = new Audio("../../public/Mouse_Click_Sound.mp3");
+    sound.play();
+  }
+
   render() {
     return (
       <div className="pomodoro-container">
@@ -103,6 +108,7 @@ class App extends React.Component {
           <h1>Pomodoro Timer</h1>
           <div className="row justify-content-center align-items-center">
             <BreakInterval
+              clickSound={this.clickSound}
               isStart={this.state.isPlay}
               breakInterval={this.state.breakLength}
               increaseBreak={this.onIncreaseBreakLength}
