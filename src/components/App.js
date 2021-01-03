@@ -4,8 +4,13 @@ import SessionLength from './SessionLength';
 import FlipClock from './FlipClock';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../App.css';
+import { Howl } from "howler";
+
+const audio = {sound: ["http://soundbible.com/mp3/Button-SoundBible.com-1420500901.mp3"]};
 
 class App extends React.Component {
+
+
   constructor() {
     super();
 
@@ -96,10 +101,15 @@ class App extends React.Component {
     })
   }
 
-  clickSound(){
-    var sound = new Audio("../../public/Mouse_Click_Sound.mp3");
+  clickSound = (src) => {
+
+    const sound = new Howl({
+      src,
+      html5: true
+    })
     sound.play();
   }
+
 
   render() {
     return (
@@ -114,6 +124,8 @@ class App extends React.Component {
               increaseBreak={this.onIncreaseBreakLength}
               decreaseBreak={this.onDecreaseBreakLength} />
             <SessionLength
+              clickSound={this.clickSound}
+              audio = {this.audio}
               isStart={this.state.isPlay}
               sessionLength={this.state.sessionLength}
               increaseSession={this.onIncreaseSessionLength}

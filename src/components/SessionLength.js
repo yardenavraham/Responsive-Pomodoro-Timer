@@ -4,6 +4,7 @@ import { FaMinus } from "react-icons/fa"
  
 function SessionLength(props) {
     function decreaseSession() {
+        props.clickSound("http://soundbible.com/mp3/Button-SoundBible.com-1420500901.mp3");
         if (props.sessionLength === 1) {
             return;
         }
@@ -12,6 +13,7 @@ function SessionLength(props) {
     }
 
     function increaseSession() {
+        props.clickSound("http://soundbible.com/mp3/Button-SoundBible.com-1420500901.mp3");
         if (props.sessionLength === 60) {
             return;
         }

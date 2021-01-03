@@ -5,6 +5,7 @@ import { FaMinus } from "react-icons/fa"
 
 function BreakInterval(props) {
     function decreaseCounter() {
+        // props.clickSound("http://soundbible.com/mp3/Button-SoundBible.com-1420500901.mp3");
         if (props.breakInterval === 1) {
             return;
         }
@@ -13,7 +14,7 @@ function BreakInterval(props) {
     }
 
     function increaseCounter() {
-        props.clickSound();
+        // props.clickSound("http://soundbible.com/mp3/Button-SoundBible.com-1420500901.mp3");
         if (props.breakInterval === 60) {
             return;
         }
