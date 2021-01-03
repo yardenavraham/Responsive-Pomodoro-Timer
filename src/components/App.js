@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../App.css';
 import { Howl } from "howler";
 
-const audio = {sound: ["http://soundbible.com/mp3/Button-SoundBible.com-1420500901.mp3"]};
+const audio = "http://soundbible.com/mp3/Button-SoundBible.com-1420500901.mp3";
 
 class App extends React.Component {
 
@@ -119,13 +119,14 @@ class App extends React.Component {
           <div className="row justify-content-center align-items-center">
             <BreakInterval
               clickSound={this.clickSound}
+              audio = {audio}
               isStart={this.state.isPlay}
               breakInterval={this.state.breakLength}
               increaseBreak={this.onIncreaseBreakLength}
               decreaseBreak={this.onDecreaseBreakLength} />
             <SessionLength
               clickSound={this.clickSound}
-              audio = {this.audio}
+              audio = {audio}
               isStart={this.state.isPlay}
               sessionLength={this.state.sessionLength}
               increaseSession={this.onIncreaseSessionLength}
