@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Responsive-Pomodoro-Timer/static/css/main.55620326.chunk.css",
-    "main.js": "/Responsive-Pomodoro-Timer/static/js/main.802756c0.chunk.js",
-    "main.js.map": "/Responsive-Pomodoro-Timer/static/js/main.802756c0.chunk.js.map",
-    "runtime-main.js": "/Responsive-Pomodoro-Timer/static/js/runtime-main.556e374d.js",
-    "runtime-main.js.map": "/Responsive-Pomodoro-Timer/static/js/runtime-main.556e374d.js.map",
+    "main.css": "/Responsive-Pomodoro-Timer/static/css/main.2e930db1.chunk.css",
+    "main.js": "/Responsive-Pomodoro-Timer/static/js/main.5180f748.chunk.js",
+    "main.js.map": "/Responsive-Pomodoro-Timer/static/js/main.5180f748.chunk.js.map",
+    "runtime-main.js": "/Responsive-Pomodoro-Timer/static/js/runtime-main.575f8f62.js",
+    "runtime-main.js.map": "/Responsive-Pomodoro-Timer/static/js/runtime-main.575f8f62.js.map",
     "static/css/2.95f25948.chunk.css": "/Responsive-Pomodoro-Timer/static/css/2.95f25948.chunk.css",
-    "static/js/2.989a20b9.chunk.js": "/Responsive-Pomodoro-Timer/static/js/2.989a20b9.chunk.js",
-    "static/js/2.989a20b9.chunk.js.map": "/Responsive-Pomodoro-Timer/static/js/2.989a20b9.chunk.js.map",
-    "static/js/3.d10e0f10.chunk.js": "/Responsive-Pomodoro-Timer/static/js/3.d10e0f10.chunk.js",
-    "static/js/3.d10e0f10.chunk.js.map": "/Responsive-Pomodoro-Timer/static/js/3.d10e0f10.chunk.js.map",
+    "static/js/2.5e09fecc.chunk.js": "/Responsive-Pomodoro-Timer/static/js/2.5e09fecc.chunk.js",
+    "static/js/2.5e09fecc.chunk.js.map": "/Responsive-Pomodoro-Timer/static/js/2.5e09fecc.chunk.js.map",
+    "static/js/3.6d6977c7.chunk.js": "/Responsive-Pomodoro-Timer/static/js/3.6d6977c7.chunk.js",
+    "static/js/3.6d6977c7.chunk.js.map": "/Responsive-Pomodoro-Timer/static/js/3.6d6977c7.chunk.js.map",
     "index.html": "/Responsive-Pomodoro-Timer/index.html",
     "static/css/2.95f25948.chunk.css.map": "/Responsive-Pomodoro-Timer/static/css/2.95f25948.chunk.css.map",
-    "static/css/main.55620326.chunk.css.map": "/Responsive-Pomodoro-Timer/static/css/main.55620326.chunk.css.map",
-    "static/js/2.989a20b9.chunk.js.LICENSE.txt": "/Responsive-Pomodoro-Timer/static/js/2.989a20b9.chunk.js.LICENSE.txt"
+    "static/css/main.2e930db1.chunk.css.map": "/Responsive-Pomodoro-Timer/static/css/main.2e930db1.chunk.css.map",
+    "static/js/2.5e09fecc.chunk.js.LICENSE.txt": "/Responsive-Pomodoro-Timer/static/js/2.5e09fecc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.556e374d.js",
+    "static/js/runtime-main.575f8f62.js",
     "static/css/2.95f25948.chunk.css",
-    "static/js/2.989a20b9.chunk.js",
-    "static/css/main.55620326.chunk.css",
-    "static/js/main.802756c0.chunk.js"
+    "static/js/2.5e09fecc.chunk.js",
+    "static/css/main.2e930db1.chunk.css",
+    "static/js/main.5180f748.chunk.js"
   ]
 }
