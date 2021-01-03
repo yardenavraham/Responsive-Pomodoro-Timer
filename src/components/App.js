@@ -119,20 +119,22 @@ class App extends React.Component {
           <div className="row justify-content-center align-items-center">
             <BreakInterval
               clickSound={this.clickSound}
-              audio = {audio}
+              audio={audio}
               isStart={this.state.isPlay}
               breakInterval={this.state.breakLength}
               increaseBreak={this.onIncreaseBreakLength}
               decreaseBreak={this.onDecreaseBreakLength} />
             <SessionLength
               clickSound={this.clickSound}
-              audio = {audio}
+              audio={audio}
               isStart={this.state.isPlay}
               sessionLength={this.state.sessionLength}
               increaseSession={this.onIncreaseSessionLength}
               decreaseSession={this.onDecreaseSessionLength} />
           </div>
           <FlipClock
+            clickSound={this.clickSound}
+            audio={audio}
             isStart={this.state.isPlay}
             timerMinute={this.state.timerMinute}
             breakLength={this.state.breakLength}

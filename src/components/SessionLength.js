@@ -13,7 +13,7 @@ function SessionLength(props) {
     }
 
     function increaseSession() {
-        // props.clickSound("http://soundbible.com/mp3/Button-SoundBible.com-1420500901.mp3");
+        props.clickSound(props.audio);
         if (props.sessionLength === 60) {
             return;
         }

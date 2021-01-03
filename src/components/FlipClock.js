@@ -142,6 +142,7 @@ class FlipClock extends React.Component {
   }
 
   playTimer() {
+    this.props.clickSound(this.props.audio);
     let intervalId = setInterval(this.decreaseTimer, 1000)
     this.props.onPlayStopTimer(true);
     this.setState({
@@ -189,11 +190,13 @@ class FlipClock extends React.Component {
   }
 
   stopTimer() {
+    this.props.clickSound(this.props.audio);
     clearInterval(this.state.intervalId); //Stop the time
     this.props.onPlayStopTimer(false);
   }
 
   resetTimer() {
+    this.props.clickSound(this.props.audio);
     this.stopTimer();
     this.props.resetTimer();
     this.props.onPlayStopTimer(false);
