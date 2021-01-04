@@ -6,19 +6,17 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../App.css';
 import { Howl } from "howler";
 
-const audio = "http://soundbible.com/mp3/Button-SoundBible.com-1420500901.mp3";
+const clickAudio = "http://soundbible.com/mp3/Button-SoundBible.com-1420500901.mp3";
 
 class App extends React.Component {
-
-
   constructor() {
     super();
-
     this.state = {
       sessionLength: 25,
       breakLength: 5,
       timerMinute: 25,
-      isPlay: false
+      isPlay: false,
+      isBackgroundSound: false
     }
 
     this.onIncreaseBreakLength = this.onIncreaseBreakLength.bind(this);
@@ -102,14 +100,12 @@ class App extends React.Component {
   }
 
   clickSound = (src) => {
-
     const sound = new Howl({
       src,
       html5: true
     })
     sound.play();
   }
-
 
   render() {
     return (
@@ -119,14 +115,14 @@ class App extends React.Component {
           <div className="row justify-content-center align-items-center">
             <BreakInterval
               clickSound={this.clickSound}
-              audio={audio}
+              audio={clickAudio}
               isStart={this.state.isPlay}
               breakInterval={this.state.breakLength}
               increaseBreak={this.onIncreaseBreakLength}
               decreaseBreak={this.onDecreaseBreakLength} />
             <SessionLength
               clickSound={this.clickSound}
-              audio={audio}
+              audio={clickAudio}
               isStart={this.state.isPlay}
               sessionLength={this.state.sessionLength}
               increaseSession={this.onIncreaseSessionLength}
@@ -134,7 +130,7 @@ class App extends React.Component {
           </div>
           <FlipClock
             clickSound={this.clickSound}
-            audio={audio}
+            audio={clickAudio}
             isStart={this.state.isPlay}
             timerMinute={this.state.timerMinute}
             breakLength={this.state.breakLength}

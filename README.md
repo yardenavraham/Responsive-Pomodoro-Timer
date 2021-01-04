@@ -4,33 +4,33 @@ The Pomodoro Technique is a time management method that can be used for any task
 
 The aim of the Pomodoro Technique is to use time as a valuable ally in accomplishing what we want to do in the way we want to do it, and to enable us to improve continually the way we work or study.
 
-## Motivation
+## :sparkles: Motivation
 
 The idea came up due to the need to take advantage of the time. I also wanted to learn more about Bootstrap4, React, CSS.
 
-## Getting Started with Create React App
+## :sparkles: Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
 
-## Screenshots
+## :sparkles: Screenshots
 
--For mobile
+- For mobile
 
 ![Image of Yaktocat](https://github.com/yardenavraham/Responsive-Pomodoro-Timer/blob/master/Screenshot_1.jpeg)
 
--For laptop
+- For laptop
 
 ![Image of Yaktocat](https://github.com/yardenavraham/Responsive-Pomodoro-Timer/blob/master/Screenshot_2.jpeg)
 
-## Tech/framework used
+## :sparkles: Tech/framework used
 React. Bootstrap4.
 
-## Features
+## :sparkles: Features
 
 The user can change his session length and break length.
 Buttons for play/pause/refresh with sound click button. :musical_note:
 
-## Available Scripts
+## :sparkles: Available Scripts
 
 In the project directory, you can run:
 
@@ -50,7 +50,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-## License
+## :sparkles: License
 
 MIT © [Yourname](https://github.com/yardenavraham)
 
