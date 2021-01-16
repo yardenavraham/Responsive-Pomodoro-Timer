@@ -3,8 +3,8 @@ import React from 'react';
 import { FaPlus } from "react-icons/fa"
 import { FaMinus } from "react-icons/fa"
 
-function BreakInterval(props) {
-    function decreaseCounter() {
+const BreakInterval = (props) => {
+    const decreaseCounter = () => {
         props.clickSound(props.audio);
         if (props.breakInterval === 1) {
             return;
@@ -13,7 +13,7 @@ function BreakInterval(props) {
 
     }
 
-    function increaseCounter() {
+    const increaseCounter = () => {
         props.clickSound(props.audio);
         if (props.breakInterval === 60) {
             return;

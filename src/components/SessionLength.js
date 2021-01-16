@@ -2,8 +2,8 @@ import React from 'react';
 import { FaPlus } from "react-icons/fa"
 import { FaMinus } from "react-icons/fa"
  
-function SessionLength(props) {
-    function decreaseSession() {
+const SessionLength = (props) => {
+    const decreaseSession = () => {
         props.clickSound(props.audio);
         if (props.sessionLength === 1) {
             return;
@@ -12,7 +12,7 @@ function SessionLength(props) {
 
     }
 
-    function increaseSession() {
+    const increaseSession = () => {
         props.clickSound(props.audio);
         if (props.sessionLength === 60) {
             return;

@@ -32,17 +32,6 @@ const FlipUnitContainer = ({ digit, shuffle, unit }) => {
   let currentDigit = digit;
   let previousDigit = digit + 1;
 
-  // // to prevent a negative value
-  // if (unit !== 'hours') {
-  //   previousDigit = previousDigit === -1
-  //     ? 59
-  //     : previousDigit;
-  // } else {
-  //   previousDigit = previousDigit === -1
-  //     ? 23
-  //     : previousDigit;
-  // }
-
   // add zero
   if (currentDigit < 10) {
     currentDigit = `0${currentDigit}`;
@@ -189,13 +178,13 @@ class FlipClock extends React.Component {
 
   }
 
-  stopTimer() {
+  stopTimer = () => {
     this.props.clickSound(this.props.audio);
     clearInterval(this.state.intervalId); //Stop the time
     this.props.onPlayStopTimer(false);
   }
 
-  resetTimer() {
+  resetTimer = () => {
     this.props.clickSound(this.props.audio);
     this.stopTimer();
     this.props.resetTimer();

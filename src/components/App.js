@@ -18,19 +18,10 @@ class App extends React.Component {
       isPlay: false,
       isBackgroundSound: false
     }
-
-    this.onIncreaseBreakLength = this.onIncreaseBreakLength.bind(this);
-    this.onDecreaseBreakLength = this.onDecreaseBreakLength.bind(this);
-    this.onIncreaseSessionLength = this.onIncreaseSessionLength.bind(this);
-    this.onDecreaseSessionLength = this.onDecreaseSessionLength.bind(this);
-    this.onToggleInterval = this.onToggleInterval.bind(this);
-    this.onDecreaseTimerMinute = this.onDecreaseTimerMinute.bind(this);
-    this.onResetTimer = this.onResetTimer.bind(this);
-    this.onPlayStopTimer = this.onPlayStopTimer.bind(this);
   }
 
 
-  onIncreaseBreakLength() {
+  onIncreaseBreakLength = () => {
     this.setState((prevState) => {
       return {
         breakLength: prevState.breakLength + 1
@@ -38,7 +29,7 @@ class App extends React.Component {
     })
   }
 
-  onDecreaseBreakLength() {
+  onDecreaseBreakLength = () => {
     this.setState((prevState) => {
       return {
         breakLength: prevState.breakLength - 1
@@ -46,7 +37,7 @@ class App extends React.Component {
     })
   }
 
-  onIncreaseSessionLength() {
+  onIncreaseSessionLength = () => {
     this.setState((prevState) => {
       return {
         sessionLength: prevState.sessionLength + 1,
@@ -55,7 +46,7 @@ class App extends React.Component {
     })
   }
 
-  onDecreaseSessionLength() {
+  onDecreaseSessionLength = () => {
     this.setState((prevState) => {
       return {
         sessionLength: prevState.sessionLength - 1,
@@ -64,7 +55,7 @@ class App extends React.Component {
     })
   }
 
-  onDecreaseTimerMinute() {
+  onDecreaseTimerMinute = () => {
     this.setState((prevState) => {
       return {
         timerMinute: prevState.timerMinute - 1,
@@ -72,7 +63,7 @@ class App extends React.Component {
     })
   }
 
-  onToggleInterval(isSession) {
+  onToggleInterval = (isSession) => {
     if (isSession) {
       this.setState({
         timerMinute: this.state.settionLength
@@ -86,20 +77,20 @@ class App extends React.Component {
     }
   }
 
-  onResetTimer() {
+  onResetTimer = () => {
     this.setState({
       timerMinute: this.state.sessionLength
     })
   }
 
-  onPlayStopTimer(isPlay) {
+  onPlayStopTimer = (isPlay) => {
     this.setState({
       isPlay: isPlay
 
     })
   }
 
-  clickSound = (src) => {
+clickSound = (src) => {
     const sound = new Howl({
       src,
       html5: true
